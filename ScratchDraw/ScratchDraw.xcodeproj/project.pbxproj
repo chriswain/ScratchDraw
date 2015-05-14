@@ -13,6 +13,7 @@
 		E8F458701B04D6FA0080ABFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F4586F1B04D6FA0080ABFB /* Images.xcassets */; };
 		E8F458731B04D6FA0080ABFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F458711B04D6FA0080ABFB /* LaunchScreen.xib */; };
 		E8F4587F1B04D6FA0080ABFB /* ScratchDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F4587E1B04D6FA0080ABFB /* ScratchDrawTests.swift */; };
+		E8F458891B04D9F40080ABFB /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F458881B04D9F40080ABFB /* ScratchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E8F458781B04D6FA0080ABFB /* ScratchDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F4587D1B04D6FA0080ABFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8F4587E1B04D6FA0080ABFB /* ScratchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchDrawTests.swift; sourceTree = "<group>"; };
+		E8F458881B04D9F40080ABFB /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		E8F458651B04D6FA0080ABFB /* ScratchDraw */ = {
 			isa = PBXGroup;
 			children = (
-				E8F458681B04D6FA0080ABFB /* AppDelegate.swift */,
 				E8F4586A1B04D6FA0080ABFB /* ViewController.swift */,
 				E8F4586C1B04D6FA0080ABFB /* Main.storyboard */,
-				E8F4586F1B04D6FA0080ABFB /* Images.xcassets */,
-				E8F458711B04D6FA0080ABFB /* LaunchScreen.xib */,
+				E8F458881B04D9F40080ABFB /* ScratchView.swift */,
 				E8F458661B04D6FA0080ABFB /* Supporting Files */,
 			);
 			path = ScratchDraw;
@@ -91,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				E8F458671B04D6FA0080ABFB /* Info.plist */,
+				E8F4586F1B04D6FA0080ABFB /* Images.xcassets */,
+				E8F458681B04D6FA0080ABFB /* AppDelegate.swift */,
+				E8F458711B04D6FA0080ABFB /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				E8F4586B1B04D6FA0080ABFB /* ViewController.swift in Sources */,
 				E8F458691B04D6FA0080ABFB /* AppDelegate.swift in Sources */,
+				E8F458891B04D9F40080ABFB /* ScratchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
