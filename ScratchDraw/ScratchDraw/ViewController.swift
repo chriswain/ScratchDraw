@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    @IBAction func undoDraw(sender: UIButton) {
+        if !scratchPad.scratches.isEmpty {
+        scratchPad.scratches.removeLast()
+        }
+        scratchPad.setNeedsDisplay()
+    }
+    
     @IBAction func clearLines(sender: AnyObject) {
         scratchPad.scratches = []
         scratchPad.setNeedsDisplay()
