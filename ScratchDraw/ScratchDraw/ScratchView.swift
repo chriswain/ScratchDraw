@@ -11,7 +11,9 @@ import UIKit
 class ScratchView: UIView {
     
     var currentColor = UIColor.blackColor()
-
+    
+    var strokeSize: Double = 5
+    
 
     var scratches: [Scratch] = []
         override func drawRect(rect: CGRect) {
@@ -36,6 +38,7 @@ class ScratchView: UIView {
                         for point in scratch.points {
                             
                             CGContextAddLineToPoint(context, point.x, point.y)
+                           CGContextSetLineWidth(context, CGFloat(strokeSize))
                             
                         }
                         
@@ -49,9 +52,11 @@ class ScratchView: UIView {
     
     func newScratchWithStartPoint(point: CGPoint) {
         
+        
         var scratch = Scratch()
         scratch.points = [point,point]
         scratch.strokeColor = currentColor
+        scratch.strokeSize = sliderValue
         scratches.append(scratch)
         setNeedsDisplay()
         
@@ -83,7 +88,7 @@ class Scratch {
     var points:[CGPoint] = []
     var fillColor: UIColor?
     var strokeColor: UIColor?
-    var strokeSize: Double = 0
+    var strokeSize: Double? = 0
     
     // line dash
     // line cap

@@ -8,8 +8,18 @@
 
 import UIKit
 
+ var sliderValue = Double(0)
+
 class ViewController: UIViewController {
     
+    
+    
+    @IBAction func strokeSizeAdj(sender: UISlider) {
+      scratchPad.strokeSize = Double(sender.value)
+      sliderValue = Double(sender.value)
+       
+    
+    }
     
     @IBAction func undoDraw(sender: UIButton) {
         if !scratchPad.scratches.isEmpty {

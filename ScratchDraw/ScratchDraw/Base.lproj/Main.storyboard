@@ -69,6 +69,12 @@
                                             <action selector="undoDraw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYf-iK-Lhv"/>
                                         </connections>
                                     </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="325-RJ-1CB">
+                                        <rect key="frame" x="241" y="465" width="118" height="31"/>
+                                        <connections>
+                                            <action selector="strokeSizeAdj:" destination="BYZ-38-t0r" eventType="valueChanged" id="LT2-cQ-pAf"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
