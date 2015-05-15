@@ -8,7 +8,8 @@
 
 import UIKit
 
- var sliderValue = Double(0)
+var sliderValue = Double(0)
+var context = UIGraphicsGetCurrentContext()
 
 class ViewController: UIViewController {
     
@@ -19,6 +20,9 @@ class ViewController: UIViewController {
   
     
     @IBAction func clearFill(sender: UIButton) {
+        if scratchPad.fillColor != UIColor.blackColor() {
+            CGContextSetFillColorWithColor(context, UIColor.blackColor().CGColor)
+        }
     }
     
     
