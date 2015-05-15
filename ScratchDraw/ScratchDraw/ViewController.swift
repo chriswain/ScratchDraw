@@ -12,7 +12,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBAction func clearStroke(sender: UIButton) {
+        
+        
+    }
+  
     
+    @IBAction func clearFill(sender: UIButton) {
+    }
+    
+    
+    @IBAction func fillColor(sender: UIButton) {
+        scratchPad.fillColor = sender.backgroundColor!
+        
+    }
     
     @IBAction func strokeSizeAdj(sender: UISlider) {
       scratchPad.strokeSize = Double(sender.value)

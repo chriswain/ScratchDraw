@@ -14,16 +14,18 @@ class ScratchView: UIView {
     
     var strokeSize: Double = 5
     
+    var fillColor = UIColor.blueColor() 
 
     var scratches: [Scratch] = []
         override func drawRect(rect: CGRect) {
             
             var context = UIGraphicsGetCurrentContext()
             
-            CGContextSetLineWidth(context, 5.0)
+     //       CGContextSetLineWidth(context, 5.0)
             CGContextSetLineCap(context, kCGLineCapRound)
             
-            UIColor.blackColor().set()
+      //      UIColor.blackColor().set()
+            
             
             for scratch in scratches {
                 
@@ -39,10 +41,12 @@ class ScratchView: UIView {
                             
                             CGContextAddLineToPoint(context, point.x, point.y)
                            CGContextSetLineWidth(context, CGFloat(strokeSize))
+                            CGContextSetFillColorWithColor(context, fillColor.CGColor)
                             
                         }
                         
                         CGContextStrokePath(context)
+                        
                         
                     }
                

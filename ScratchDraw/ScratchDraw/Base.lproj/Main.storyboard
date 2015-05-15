@@ -33,6 +33,16 @@
                                                     <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Riz-ZD-tAd"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncb-t1-FGB">
+                                                <rect key="frame" x="88" y="8" width="64" height="64"/>
+                                                <color key="backgroundColor" red="0.59832527619999998" green="0.09791311311377994" blue="0.22563029951912231" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cZ-dJ-CtW"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-HA-Mg8">
                                                 <rect key="frame" x="168" y="8" width="64" height="64"/>
                                                 <color key="backgroundColor" red="0.1764705882" green="0.82745098039999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,14 +54,57 @@
                                                     <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OGw-av-uAa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncb-t1-FGB">
-                                                <rect key="frame" x="88" y="8" width="64" height="64"/>
-                                                <color key="backgroundColor" red="0.59832527619999998" green="0.09791311311377994" blue="0.22563029951912231" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92B-AS-FnN">
+                                                <rect key="frame" x="246" y="25" width="30" height="47"/>
+                                                <color key="backgroundColor" red="0.96470588239999999" green="0.48627450979999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Fill">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cZ-dJ-CtW"/>
+                                                    <action selector="fillColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fzz-kI-mkV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-JA-4ef">
+                                                <rect key="frame" x="285" y="25" width="30" height="47"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Fill">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fillColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kR-YL-Pec"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65d-nW-G4F">
+                                                <rect key="frame" x="323" y="25" width="30" height="47"/>
+                                                <color key="backgroundColor" red="0.58452760090894573" green="0.10316294437085219" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Fill">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fillColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJj-8n-Zml"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWN-SA-gGs">
+                                                <rect key="frame" x="246" y="8" width="45" height="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <state key="normal" title="Clear Fill">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clearFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Chy-KO-oyH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2S-jc-BUC">
+                                                <rect key="frame" x="296" y="9" width="85" height="11"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <state key="normal" title="Clear Stroke">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clearStroke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rO-Zu-ICb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -69,7 +122,7 @@
                                             <action selector="undoDraw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYf-iK-Lhv"/>
                                         </connections>
                                     </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="325-RJ-1CB">
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="325-RJ-1CB">
                                         <rect key="frame" x="241" y="465" width="118" height="31"/>
                                         <connections>
                                             <action selector="strokeSizeAdj:" destination="BYZ-38-t0r" eventType="valueChanged" id="LT2-cQ-pAf"/>
