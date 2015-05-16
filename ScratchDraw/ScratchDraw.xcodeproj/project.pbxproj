@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E833201B1B062AA5002FA5D1 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833201A1B062AA5002FA5D1 /* ColorCell.swift */; };
 		E8F458691B04D6FA0080ABFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F458681B04D6FA0080ABFB /* AppDelegate.swift */; };
 		E8F4586B1B04D6FA0080ABFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F4586A1B04D6FA0080ABFB /* ViewController.swift */; };
 		E8F4586E1B04D6FA0080ABFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F4586C1B04D6FA0080ABFB /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E833201A1B062AA5002FA5D1 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		E8F458631B04D6FA0080ABFB /* ScratchDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F458671B04D6FA0080ABFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8F458681B04D6FA0080ABFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				E8F4586A1B04D6FA0080ABFB /* ViewController.swift */,
 				E8F4586C1B04D6FA0080ABFB /* Main.storyboard */,
+				E833201A1B062AA5002FA5D1 /* ColorCell.swift */,
 				E8F458881B04D9F40080ABFB /* ScratchView.swift */,
 				E8F458661B04D6FA0080ABFB /* Supporting Files */,
 			);
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F4586B1B04D6FA0080ABFB /* ViewController.swift in Sources */,
+				E833201B1B062AA5002FA5D1 /* ColorCell.swift in Sources */,
 				E8F458691B04D6FA0080ABFB /* AppDelegate.swift in Sources */,
 				E8F458891B04D9F40080ABFB /* ScratchView.swift in Sources */,
 			);
@@ -415,6 +419,7 @@
 				E8F458841B04D6FA0080ABFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8F458851B04D6FA0080ABFB /* Build configuration list for PBXNativeTarget "ScratchDrawTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				E8F458871B04D6FA0080ABFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

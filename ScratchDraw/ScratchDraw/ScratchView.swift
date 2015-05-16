@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum ShapeType {
+    case Line
+    case Ellipse
+    case Rectangle
+}
+
 class ScratchView: UIView {
     
     var currentColor = UIColor.blackColor()
@@ -84,6 +90,7 @@ class Scratch {
     var fillColor: UIColor?
     var strokeColor: UIColor?
     var strokeSize: Double = 0
+    var shapeType: [CGRect] = []
     
     // line dash
     // line cap
